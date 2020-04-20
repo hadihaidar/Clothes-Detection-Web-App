@@ -1,0 +1,28 @@
+<p>A simple web app that detects the type clothes in the uploaded picture.</p>
+<div class="input-group">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" (change)="uploaded($event)">
+    <label class="custom-file-label" for="inputGroupFile04">Drop File here</label>
+  </div>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" (click)="send()" [disabled]="sendB">Detect</button>
+  </div>
+</div>
+
+<nb-layout>
+  
+  <nb-layout-column>   
+    <div style = "text-align: center;">
+      <h1 *ngIf = 'hide' ><img  src="../../assets/images/ConventionalOblongFairybluebird-small.gif" ></h1>
+
+    </div> 
+<nb-card   status="primary" style="display: none;" id="card" >
+  <nb-card-header>Image</nb-card-header>
+  <nb-card-body style = "text-align: center;">
+    <img [src]="src" style="display: none;" id="img"  alt="your image" >
+      <canvas id="blah"  alt="your image" ></canvas>
+    </nb-card-body>
+  </nb-card>
+
+</nb-layout-column>
+</nb-layout>
