@@ -1,6 +1,10 @@
 # Clothes-Detection-Web-App
 A simple side project written in Angular JS that consumes a Rest API responsible for detecting different pieces of clothes.
-The API is currently capable of detecting 19 pieces of clothes:
+
+The API was written using python and uses a tensorflow model to do the detection.
+
+It is currently capable of detecting 19 pieces of clothes:
+
     1: "Shirt",
     2: "Tank Top",
     3: "Long Sleeve Top",
